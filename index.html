@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <title>8-31-基于icpnfont的下导航</title>
+    <style>
+        body,ul,p{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #fixed{
+            position: fixed;/*固定位置*/
+            left:0;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;/*z轴*/
+            display: flex;
+            background-color: #fff;
+        }
+        #fixed li{
+            flex: 1;/*平分*/
+            text-align: center;
+        }
+        #fixed li span{
+            font-size: 24px;
+            color: #999;
+            line-height: 30px;
+            display: block;
+        }
+        #fixed li p{
+            font-size: 14px;
+            color: #aaa;
+            line-height: 24px;
+        }
+        #fixed>li:nth-child(3) span{
+            margin-top: -5px;
+            margin-bottom: 5px;
+            font-size: bold;
+            font-size: 30px;
+            color: #000;
+        }
+        #fixed>li span:hover{
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fixed">
+        <li>
+            <span class="iconfont icon-shejiaotubiao-44"></span>
+            <p>淘宝</p>
+        </li>
+        <li>
+            <span class="iconfont icon-zhibo"></span>
+            <p>直播</p>
+        </li>
+        <li>
+            <span class="iconfont icon-xiaoxi"></span>
+            <p>消息</p>
+        </li>
+        <li>
+            <span class="iconfont icon-gouwuche"></span>
+            <p>购物车</p>
+        </li>
+        <li>
+            <span class="iconfont icon-wodetaobao"></span>
+            <p>我的淘宝</p>
+        </li>
+    </ul>
+</body>
+</html>
